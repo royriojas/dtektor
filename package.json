@@ -1,6 +1,6 @@
 {
   "name": "dtektor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A module to detect client side browser capabilities, heavily inspired in modernizr but with tests written as commonJS modules.",
   "main": "index.js",
   "scripts": {
