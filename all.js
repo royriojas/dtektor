@@ -1,3 +1,3 @@
-module.exports = require( './' )( require( './p/*.js', {
+module.exports = require( './' )( require( './f/*.js', {
   mode: 'hash'
 } ) );

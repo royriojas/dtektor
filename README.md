@@ -11,6 +11,7 @@ This is intended to be use with browserify, since it uses browserify transforms:
 
 - shimixify
 - require-globify
+- babelify
 
 ## Install
 
@@ -23,8 +24,8 @@ npm i --save dtektor
 ```javascript
 // hard way to use it
 var dtektor = require('dtektor')({
-  touch: require('dtektor/p/touch'),
-  fullscreen: require('dtektor/p/fullscreen'),
+  touch: require('dtektor/f/touch'),
+  fullscreen: require('dtektor/f/fullscreen'),
   // this is a custom test implemented in your app
   // dash separated keys will be transformed to
   // camelCase ones on the returned object
@@ -34,12 +35,21 @@ var dtektor = require('dtektor')({
 // the keys that contain dashes
 // are converted to camelCase ones
 dtektor.anotherTest
+
+// also the html element will have the classes:
+// - touch, if touch is supported or no-touch if not supported
+// - fullscreen, if fullscreen is supported or no-fullscreen if not supported
+// - another-test, if the custom test exports a boolean === true or
+//   no-another-test if the exported value is false
 ```
 
-**Load all the tests**
+**Load all the tests included in this module**
 
 ```javascript
 // for now only tests for fullscreen, hover-enabled and touch
+// ideally all the tests in the modernizr repo could be moved to commonjs
+// modules and can be imported here but this should be only done for dev purposes
+// TODO: Add more modernizr tests to the p/ folder (f stands for features)
 var dtektor = require('dtektor/all');
 ```
 

@@ -4,9 +4,9 @@
   "description": "A module to detect client side browser capabilities, heavily inspired in modernizr but with tests written as commonJS modules.",
   "main": "index.js",
   "scripts": {
-    "beautify": "esbeautifier 'index.js' 'lib/**/*.js' 'p/**/*.js' 'src/**/*.js' 'specs/**/*.js'",
-    "beautify-check": "esbeautifier -k 'index.js' 'lib/**/*.js' 'p/**/*.js' 'src/**/*.js' 'specs/**/*.js'",
-    "eslint": "eslinter 'index.js' 'lib/**/*.js' 'p/**/*.js' 'src/**/*.js' 'specs/**/*.js'",
+    "beautify": "esbeautifier 'index.js' 'lib/**/*.js' 'f/**/*.js' 'src/**/*.js' 'specs/**/*.js'",
+    "beautify-check": "esbeautifier -k 'index.js' 'lib/**/*.js' 'f/**/*.js' 'src/**/*.js' 'specs/**/*.js'",
+    "eslint": "eslinter 'index.js' 'lib/**/*.js' 'f/**/*.js' 'src/**/*.js' 'specs/**/*.js'",
     "test": "npm run bundly:test && npm run karma -- --single-run",
     "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
     "watch": "watch-spawn -i -p 'specs/**/*.js' -p 'index.js' npm run cover",
