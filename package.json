@@ -1,7 +1,7 @@
 {
   "name": "dtektor",
   "version": "0.1.0",
-  "description": "A trim method that behaves like jquery.trim",
+  "description": "A module to detect client side browser capabilities, heavily inspired in modernizr but with tests written as commonJS modules.",
   "main": "index.js",
   "scripts": {
     "beautify": "esbeautifier 'index.js' 'lib/**/*.js' 'p/**/*.js' 'src/**/*.js' 'specs/**/*.js'",
