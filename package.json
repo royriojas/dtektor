@@ -33,16 +33,16 @@
   },
   "browserify": {
     "transform": [
-      "shimixify",
+      ["shimixify", {
+        "shims": {
+          "document": "global.document"
+        }
+      }],
       "babelify",
       "require-globify"
     ]
   },
-  "shimixify": {
-    "shims": {
-      "document": "global.document"
-    }
-  },
+
   "keywords": [
     "trim",
     "jquery-trim",
