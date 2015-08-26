@@ -1,5 +1,10 @@
 
 # dtektor - Changelog
+## v0.1.3
+- **Bug Fixes**
+  - make the transform to actually work when the module is required from the consumer - [9f10a63]( https://github.com/royriojas/dtektor/commit/9f10a63 ), [Roy Riojas](https://github.com/Roy Riojas), 26/08/2015 01:30:45
+
+    
 ## v0.1.2
 - **Refactoring**
   - rename p folder to f. (f)eatures - [08530fa]( https://github.com/royriojas/dtektor/commit/08530fa ), [Roy Riojas](https://github.com/Roy Riojas), 25/08/2015 04:29:38
