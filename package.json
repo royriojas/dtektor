@@ -1,6 +1,6 @@
 {
   "name": "dtektor",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A module to detect client side browser capabilities, heavily inspired in modernizr but with tests written as commonJS modules.",
   "main": "index.js",
   "scripts": {
@@ -33,16 +33,18 @@
   },
   "browserify": {
     "transform": [
-      ["shimixify", {
-        "shims": {
-          "document": "global.document"
+      [
+        "shimixify",
+        {
+          "shims": {
+            "document": "global.document"
+          }
         }
-      }],
+      ],
       "babelify",
       "require-globify"
     ]
   },
-
   "keywords": [
     "trim",
     "jquery-trim",
