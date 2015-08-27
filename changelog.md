@@ -1,5 +1,10 @@
 
 # dtektor - Changelog
+## v0.1.4
+- **Enhancements**
+  - Add localstorage test - [d20869b]( https://github.com/royriojas/dtektor/commit/d20869b ), [royriojas](https://github.com/royriojas), 27/08/2015 12:35:27
+
+    
 ## v0.1.3
 - **Bug Fixes**
   - make the transform to actually work when the module is required from the consumer - [9f10a63]( https://github.com/royriojas/dtektor/commit/9f10a63 ), [Roy Riojas](https://github.com/Roy Riojas), 26/08/2015 01:30:45
