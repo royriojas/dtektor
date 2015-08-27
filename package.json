@@ -37,6 +37,7 @@
         "shimixify",
         {
           "shims": {
+            "window": "global.window",
             "document": "global.document"
           }
         }
