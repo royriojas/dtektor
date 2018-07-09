@@ -29,7 +29,9 @@
     "karma": "karma start configs/karma.conf.js",
     "karma:delayed": "sleep 2s && npm run karma -- --single-run",
     "test:chrome": "shell-exec 'npm run bundly:test' 'npm run karma:chrome'",
-    "test:develop": "shell-exec 'npm run bundly:test -- --watch' 'npm run karma:watch'"
+    "test:develop": "shell-exec 'npm run bundly:test -- --watch' 'npm run karma:watch'",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserify": {
     "transform": [
@@ -67,14 +69,15 @@
     "onDirtyState": "stash"
   },
   "dependencies": {
-    "babelify": "^6.2.0",
+    "babelify": "^7.0.0",
     "browser-detector": "^0.1.2",
     "camel-2-dash": "^0.1.0",
     "dash-2-camel": "^0.1.0",
     "dom-add-class": "^0.1.7",
     "extend": "^3.0.0",
     "require-globify": "^1.3.0",
-    "shimixify": "^1.1.5"
+    "shimixify": "^1.1.5",
+    "snyk": "^1.88.2"
   },
   "devDependencies": {
     "browserify-babel-istanbul": "^0.2.1",
@@ -104,5 +107,6 @@
     "prepush": "^3.1.4",
     "shell-executor": "^0.3.2",
     "watch-spawn": "^1.0.5"
-  }
+  },
+  "snyk": true
 }
