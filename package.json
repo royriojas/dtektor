@@ -67,7 +67,7 @@
     "onDirtyState": "stash"
   },
   "dependencies": {
-    "babelify": "^6.2.0",
+    "babelify": "^8.0.0",
     "browser-detector": "^0.1.2",
     "camel-2-dash": "^0.1.0",
     "dash-2-camel": "^0.1.0",
